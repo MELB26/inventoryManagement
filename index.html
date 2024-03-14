@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Inventory System Management</h2>
+        <form action="#" id="inputForm">
+            <div class="input-group">
+                <label for="item">Item:</label>
+                <input type="text" id="item" placeholder="Enter item">
+            </div>
+            <div class="input-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" placeholder="Enter quantity">
+            </div>
+            <button type="submit">Add Item</button>
+        </form>
+        <div class="setVisibility">
+            <label for="checkbox">View table</label>
+            <input type="checkbox" id="checkbox" checked>
+        </div>
+        <div class="tablesSection">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="inventoryTableBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
